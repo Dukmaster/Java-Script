@@ -1,0 +1,36 @@
+<script>
+
+let cor =  prompt('Digite uma cor do farol de transito');
+
+    switch (cor) {
+
+      case 'vermelho':
+
+        document.write('<h1>Pare!</h1>');
+
+        document.bgColor = 'red';
+
+        break;
+
+      case 'amarelo':
+
+        document.write('<h1>Atenção!</h1>');
+
+        document.bgColor = 'yellow';
+
+        break;
+
+      case 'verde':
+
+        document.write('<h1>Siga!</h1>');
+
+        document.bgColor = 'green';
+
+        break;
+
+      default:
+
+        document.write('<h1>Cor inválida.');
+
+    }
+</script>
