@@ -1,0 +1,64 @@
+<script>
+    /*
+    Funções nativas em JavaScript
+    Uma função nativa em JavaScript é uma função incorporada que já está disponível na linguagem JavaScript sem a necessidade de criar ou importar qualquer biblioteca adicional.
+     
+    Essas funções são parte do núcleo da linguagem e podem ser usadas diretamente em seu código sem a necessidade de defini-las previamente.
+    */
+
+    let texto = 'Aula javascript';
+    let texto2 = '           Aula javascript           ';
+
+    // |A|u|l|a| |j|a|v|a|s|c |r |i |p |t |
+    // |0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|        
+
+
+    //FUNÇÕES COM TEXTOS
+    console.log(texto.length); //cumprimento de uma string - contagem da palavra colocada
+    console.log(texto.charAt(5)); // qual caracter eu selecionei na string
+    console.log(texto.indexOf('r')); // qual posição o caracter esta na string
+    console.log(texto.replace('javascript', 'culinaria')); //vai substituir a palavra pela palavra apos a virgula
+    console.log(texto.substring(5, 9)); //mostra na string de 'X' para o valor 'X'.
+
+    console.log(texto.toLowerCase()); //converte a string para minusculo
+    console.log(texto.toUpperCase()); //converte a string para maiusculo
+    console.log(texto.toLocaleUpperCase()); //converte a string para maiusculo (de acordo com regiao)
+
+    console.log(texto2.trim()); //desconsidera todos os 'espaçamento' da string
+
+
+//FUNÇOES COM NUMEROS
+    let numero = 10.35978;
+    console.log(numero);
+    console.log(Math.ceil(numero)); //arredonda o valor para cima
+    console.log(Math.floor(numero)); //arredonda o valor para baixo
+    console.log(Math.round(10.5)); //arredonda a partir do 0,5 para cima e de 0,4 para baixo
+    console.log(Math.round(10.4)); //arredonda a partir do 0,5 para cima e de 0,4 para baixo
+
+
+//ALEATORIEDADE EM NUMEROS
+    let numeroaleatorio = Math.random(); //vai criar um numero aleatorio de 0 até 10
+    console.log(numeroaleatorio);
+    console.log(Math.round(numeroaleatorio));
+
+    let numeroAleatorio2 = Math.random() * 10; // numero aleatorio entre 0 e 10
+    numeroAleatorio2 = Math.round(numeroAleatorio2);
+    console.log('Aleatorio entre 0 e 10: ' + numeroAleatorio2);
+
+//DATAS
+    let data = new Date();
+    console.log(data); //puxa todas as informações da data e hora do PC
+    console.log('Dia Semana: ' + data.getDay()); //usado para puxar apenas a dia da semana (hoje quarta, puxou dia 4)
+    console.log('Dia mes: ' + data.getDate()); // puxa o dia do mes da string
+    console.log('mes: ' + data.getMonth()); // me da o mes do ano, porem começa contagem do 0, correçao abaixo
+    console.log('mes: ' + (data.getMonth() +1)); // me da o mes do ano porem, resposta correta...
+    console.log('ano: ' + data.getFullYear()); // me tras o ano
+
+
+let dataagora = new Date();
+if (dataagora >= 10)
+console.log( dataagora.getDate() + ' / ' + (data.getMonth()+1) + ' / ' + data.getFullYear() );
+
+
+
+</script>

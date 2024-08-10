@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo02</title>
+</head>
+
+<body>
+    <style>
+        #lampada {
+            width: 50px;
+            height: 50px;
+            margin-left: 150px;
+        }
+
+        
+    </style>
+
+<!-- _________________________________________ -->
+
+    <script>
+        /*
+        function acao1() {
+            let div = document.getElementById('ligado');
+            if document.createElement("img");
+            img.src+
+        }
+
+        function acao2() {
+            let div = document.getElementById('desligado');
+        }
+ */
+
+
+ 
+        function ligar(){
+            document.getElementById("lampada").src = "lampadas/ligada.png";
+        }
+ 
+        function desligar(){
+            document.getElementById("lampada").src= "lampadas/desligadaa.png";
+        }
+ 
+    
+    </script>
+
+    <!-- ___________________________________________ -->
+
+    <h3>Ligar/Desligar a lâmpada</h3>
+ 
+    <img id="lampada" src="lampadas/desligadaa.png">
+    <br>
+ 
+    <input onclick="ligar()" type="radio" name="lampada">Ligar
+    <br>
+ 
+    <input onclick="desligar()" type="radio" name="lampada">Desligar
+
+<!-- ondblclick ao clicar 2 vezes 
+<div id="ligado" onclick="acao1();"></div>
+<div id="desligado" onclick="acao2();"></div>
+-->
+
+<!-- cod do professor -->
+
+
+</body>
+
+</html>
