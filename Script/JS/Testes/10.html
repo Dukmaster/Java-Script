@@ -1,0 +1,34 @@
+<script>
+    document.write("<h2>Padaria do Duk.SK8</h2><br>");
+    document.write("<h3>Valor unitario do Pao R$: 1,00.</h3><br>");
+    document.write("<h3>Comprando acima de  15 paes, valor cai para R$: 0,80.</h3><br><br>");
+
+
+
+    let QntPao = prompt('Quantos paes deseja?');
+    QntPao = parseInt(QntPao, 10);
+
+    if (isNaN(QntPao) || QntPao <= 0) {
+        document.write("quantidade de pao escolhida: " + QntPao);
+    document.write("promoçao valida: " + promocao);
+    document.write("valor a pagar: " + valorPagar);
+        alert('Por favor, insira um numero valido de paes.');
+    } else {
+        let valorUni = 1.00;
+        let promocao = "sempromoçao";
+
+        if (quantidade >= 15) {
+            valorUnitario = 0.80;
+            promocao = "Aplicar desconto";
+        }
+  
+    }
+    const valorPagar = (QntPao * valorUni);
+
+
+
+
+
+
+
+</script>

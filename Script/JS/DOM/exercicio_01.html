@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#nome{
+    color: brown;
+}
+
+</style>
+<body>
+    <!-- colocar borda na tabela -->
+    <table border="1"> 
+        <tr>
+            <!-- exemplo de escrita dentro de 'td'e 'id' para puxar script  -->
+            <td>Nome: </td>
+            <td id="nome"></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td id="email"></td>
+        </tr>
+        <tr>
+            <td>Telefone: </td>
+            <td id="tel"></td>
+        </tr>
+
+    </table>
+
+    <script>
+        // let para nome, para setar document.elemento('exemplo_nome') e linha abaixo para comando de execução prompt.
+        let nome = document.getElementById('nome');
+        nome.textContent = prompt("Digite seu nome");
+
+        let email = document.getElementById('email');
+        email.textContent = prompt("Digite seu Email");
+
+        let tel = document.getElementById('tel');
+        tel.textContent = prompt("Digite seu Telefone");
+
+    </script>
+
+    <button onclick="window.print()"> Imprimir </button>
+</body>
+
+</html>
